@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome - Coder Timer</title>
 </head>
-<body>
+<body id="loginPage">
     <div class="loginBox">
         <form action="">
             <input type="text" name="LgnuUserInp" placeholder="Enter your username">
             <input type="password" name="lgnPassInp" placeholder="Enter your password">
             <button type="submit">LOGIN</button>
-            <p>Don't have a account ? <a href="UserRegister.php">Register</a></p>
+            <p>Don't have a account ? <a href="coderRegister.php">Register</a></p>
         </form>
     </div>
 </body>
