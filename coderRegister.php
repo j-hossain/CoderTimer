@@ -20,7 +20,7 @@
             <input type="email" id="regEmailInp" name="regMail" placeholder="Enter a valid Email"></br></br>
             <input type="password" id="regPasswordInp" name="regPass" placeholder="Enter a password of (8-14) digits" ></br></br>
             <input type="password" id="regPasswordConfirmInp" name="regPassCon" placeholder="Retype the password"></br></br>
-            <button type="submit" >REGISTER</button>
+            <input type="submit" name="regSubmit" value="REGISTER">
         </form>
         <p>Alreay a user ? <a href="index.php">Login here</a></p>
     </div>
