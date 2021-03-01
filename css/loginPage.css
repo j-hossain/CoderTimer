@@ -1,0 +1,17 @@
+.loginBox{
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 25%;
+    transform: translate(0,-100%);
+    padding: 30px 20px;
+    text-align: center;
+    background: rgba(36, 182, 218, 0.192);
+    border-radius: 20px;
+}
+
+.loginBox .inputBox{
+    width: 350px;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
