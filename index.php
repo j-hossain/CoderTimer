@@ -3,9 +3,12 @@
     include('./Includes/header.php');
 ?>
 
-    <div class="banner w-100">
-        <a class="btn btn-primary m-auto" href="./coderLogin.php" role="button">Login</a>
-        <a class="btn btn-primary m-auto" href="./coderRegister.php" role="button">Register</a>
+    <div id="banner">
+        <div class="aboutApplicaion">
+            <p>This application is built for compitetive programmers, who want to increase their solving speed statistically. It can store the records and visualize improvement on any category the user wants to see.</br> Are you interested ?
+            </p>
+            <a class="linkBtn" href="#">Accelerate</a>
+        </div>
         <div class="overLay"></div>
     </div>
 </body>

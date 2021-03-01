@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: grey;
+    transition: all linear 0.3s;
+}
+
+a:hover{
+    color: rgb(241, 87, 25);
+}
+
+ul,li{
+    list-style: none;
+}
+
+.container{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+#navBar{
+    display: flex;
+    position: sticky;
+    z-index: 9;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    height: 50px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(223, 223, 223);
+}
+
+#navBar .menuDiv ul,#navBar .buttonsDiv{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    column-gap: 20px;
+}
+
+#navBar .logoDiv{
+    padding-right:30px;
+    width: 20%;
+}
+
+#navBar .logoDiv img{
+    object-fit:contain;
+}
+
+#navBar .menuDiv{
+    width: 50%;
+}
+
+#navBar .buttonsDiv{
+    width: 30%;
+    justify-content: flex-start;
+}
+
+.linkBtn{
+    text-transform: uppercase;
+    background: rgb(36, 182, 218);
+    border: 1px solid rgb(36, 182, 218);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    transition: all linear 0.3s;
+}
+
+.linkBtn:hover{
+    background: none;
+    color: rgb(36, 182, 218);
+
+}
+
+#banner{
+    padding: 0;
+    margin: 0;
+    height: 110vh;
+    width: 100%;
+    background-image: url('../images/bannerImage.png');
+    background-position: center;
+    background-size: cover;
+    position:relative;
+}
+
+#banner .overLay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.74);
+}
+
+#banner .aboutApplicaion{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: rgb(223, 223, 223);
+    z-index: 1 ;
+    font-size: 32px;
+    width: 70%;
+    text-align: center;
+}
+
+#banner .aboutApplicaion p{
+    padding-bottom: 30px;
+}
