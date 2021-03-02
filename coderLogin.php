@@ -8,7 +8,7 @@
     include('./loginFunctions.php');
 ?>
 
-    <div class="loginBox">
+    <div class="formBox" id="loginBox">
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
             <input class="inputBox" type="text" name="lgnhandInp" placeholder="Enter your handle name"></br></br>
             <input class="inputBox" type="password" name="lgnPassInp" placeholder="Enter your password"></br></br>

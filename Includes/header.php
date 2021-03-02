@@ -14,7 +14,7 @@
 <div class="container">
   <div id="navBar">
       <div class="logoDiv">
-          <img src="./images/coderTimerLogo.png"   alt="">
+          <a href="./index.php"><img src="./images/coderTimerLogo.png"   alt=""></a>
       </div>
       <div class="menuDiv">
           <ul class="menuItems">
@@ -25,8 +25,8 @@
       </div>
       <div class="buttonsDiv">
           <a href="./coderLogin.php" class="linkBtn" id="lgnBtn">Login</a>
-          <a href="./coderRegister.php" class="linkBtn" id="lgtBtn">Logout</a>
-          <a href="#" class="linkBtn" id="regBtn">Register</a>
+          <a href="#" class="linkBtn" id="lgtBtn">Logout</a>
+          <a href="./coderRegister.php" class="linkBtn" id="regBtn">Register</a>
       </div>
   </div>
 </div>

@@ -1,4 +1,4 @@
 <?php
-    $logState;
+    $logState=0;
     $UserHandle;
 ?>
