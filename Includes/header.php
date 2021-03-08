@@ -1,3 +1,9 @@
+<?php
+    if(!isset($_SESSION)){
+        session_start();
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +12,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/loginPage.css">
+    <link rel="stylesheet" href="./css/stopWatchPage.css">
+    <!-- <script type="text/javascript" src="./js/main.js"></script> -->
     <title>Welcome - Coder Timer</title>
 </head>
 <body>
@@ -18,15 +26,34 @@
       </div>
       <div class="menuDiv">
           <ul class="menuItems">
-              <li class="menuItem"><a href="./index.html" class="menuLink">My Profile</a></li>
-              <li class="menuItem"><a href="./StopWatchPage.php" class="menuLink">Solve a problem</a></li>
+              <?php
+                if(isset($_SESSION['logState'])){
+                    if($_SESSION['logState']){
+                        echo 
+                        '<li class="menuItem"><a href="./index.html" class="menuLink" >My Profile</a></li>';
+                    }
+                }
+              ?>
+              
+              <li class="menuItem"><a href="./StopWatchPage.html" class="menuLink">Solve a problem</a></li>
               <li class="menuItem"><a href="#" class="menuLink">Search</a></li>
           </ul>
       </div>
       <div class="buttonsDiv">
-          <a href="./coderLogin.php" class="linkBtn" id="lgnBtn">Login</a>
-          <a href="#" class="linkBtn" id="lgtBtn">Logout</a>
-          <a href="./coderRegister.php" class="linkBtn" id="regBtn">Register</a>
+          
+              <?php
+                if(isset($_SESSION['logState'])){
+                    if($_SESSION['logState']){
+                        echo 
+                        '<a href="logOut.php" class="linkBtn" id="lgtBtn">Logout</a>';
+                    }
+                }
+                else{
+                    echo 
+                    '<a href="./coderLogin.php" class="linkBtn" id="lgnBtn">Login</a>
+                    <a href="./coderRegister.php" class="linkBtn" id="regBtn">Register</a>';
+                }
+              ?>
       </div>
   </div>
 </div>

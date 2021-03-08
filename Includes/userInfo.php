@@ -1,4 +1,5 @@
 <?php
     $logState=0;
-    $UserHandle;
+    $userHandle="";
+    echo "<script>alert('".$logState."')</script>";
 ?>

@@ -1,12 +1,9 @@
 <!-- including the header -->
 <?php
     include('./Includes/header.php');
+    
 ?>
 
-<!-- includeing the login functions -->
-<?php
-    include('./loginFunctions.php');
-?>
 
     <div class="formBox" id="loginBox">
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST">
@@ -16,5 +13,14 @@
             <p>Don't have a account ? <a href="./coderRegister.php">Register</a></p>
         </form>
     </div>
+    <?php
+    
+    // <!-- includeing the login functions -->
+    include('./loginFunctions.php');
+    ?>
+    
+    <script src="./js/main.js"></script>
 </body>
 </html>
+
+

@@ -2,10 +2,6 @@
 <?php
     include('./Includes/header.php');
 ?>
-<!-- including the code for registration -->
-<?php
-    include('./registerFunctions.php');
-?>
 <!-- end of registration code -->
     <div class="formBox" id="regBox">
         <!-- <form action="./register.php" method="post">emne error handle kora jhamela , tai same page ei rakhbo -->
@@ -19,5 +15,11 @@
         </form>
         <p>Alreay a user ? <a href="./coderLogin.php">Login here</a></p>
     </div>
+    <?php
+    
+        // <!-- including the code for registration -->
+        include('./registerFunctions.php');
+    ?>
+    <script src="./js/main.js"></script>
 </body>
 </html>

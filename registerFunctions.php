@@ -1,8 +1,6 @@
 <?php
     include_once('./dbsConnector.php');
-    include_once('./Includes/userInfo.php');
-    if($logState)
-    header("Location: ./stopWatchPage.php");
+    // header("Location: ./stopWatchPage.php");
 
     if(isset($_POST['regSubmit'])){
         $handle = test_input($_POST['regHandle']);
@@ -19,9 +17,8 @@
         $sql = "insert into coder(C_handle,C_name,C_password,C_mail) values('".$handle."', '".$fullName."', '".$password."', '".$email."')";
         // echo $sql;
         if ($dtbs->query($sql) == TRUE) {
-            echo "<script>alert('registration success')</script>";
-            $logState = 1;
-            $userHandle = $this-> $handle;
+            $_SESSION['logState'] = true;
+            $_SESSION['userHandle'] = $handle;
             header("Location: ./stopWatchPage.php");
         } else {
             echo "<script>alert('Error inserting value : " . $dtbs->error."')</script>";

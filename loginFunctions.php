@@ -1,6 +1,5 @@
 <?php
     include_once('./dbsConnector.php');
-    include_once('./Includes/userInfo.php');
 
     if(isset($_POST['logSubmit'])){
         $handle = $_POST['lgnhandInp'];
@@ -19,10 +18,9 @@
         }
 
         if($loginAccess){
-            echo "<script>alert('Login Successfull')</script>";
-            $logState = 1;
-            $userHandle = $handle;
-            header("Location: ./stopWatchPage.php");
+            $_SESSION['logState'] = true;
+            $_SESSION['userHandle'] = $handle;
+            header("Location: ./stopWatchPage.html");
         }
 
         else{

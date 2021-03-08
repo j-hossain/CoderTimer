@@ -1,4 +1,4 @@
-.formBox{
+#stopWatchBody {
     width: 400px;
     margin: 0 auto;
     position: absolute;
@@ -11,9 +11,11 @@
     border-radius: 20px;
 }
 
-.formBox .inputBox{
-    width: 350px;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
+
+#stopWatchBody .biggerDigits{
+    font-size: 35px;
+}
+
+.timerButtonBox{
+    margin-top: 30px;
 }
