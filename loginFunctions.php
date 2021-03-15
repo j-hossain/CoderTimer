@@ -1,5 +1,5 @@
 <?php
-    include_once('./dbsConnector.php');
+    include('./dbsConnector.php');
 
     if(isset($_POST['logSubmit'])){
         $handle = $_POST['lgnhandInp'];
@@ -18,9 +18,10 @@
         }
 
         if($loginAccess){
+            
             $_SESSION['logState'] = true;
             $_SESSION['userHandle'] = $handle;
-            header("Location: ./stopWatchPage.html");
+            header("Location: ./stopWatchPage.php");
         }
 
         else{

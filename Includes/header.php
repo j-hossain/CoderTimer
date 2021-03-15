@@ -30,12 +30,12 @@
                 if(isset($_SESSION['logState'])){
                     if($_SESSION['logState']){
                         echo 
-                        '<li class="menuItem"><a href="./index.html" class="menuLink" >My Profile</a></li>';
+                        '<li class="menuItem"><a href="./profilePage.php" class="menuLink" >My Profile</a></li>';
                     }
                 }
               ?>
               
-              <li class="menuItem"><a href="./StopWatchPage.html" class="menuLink">Solve a problem</a></li>
+              <li class="menuItem"><a href="./StopWatchPage.php" class="menuLink">Solve a problem</a></li>
               <li class="menuItem"><a href="#" class="menuLink">Search</a></li>
           </ul>
       </div>

@@ -45,3 +45,10 @@ function increaseTime(){
     secondSpan.innerHTML = timeNow.second;
     miliSecondSpan.innerHTML = timeNow.miliSecond;
 }
+
+
+document.querySelector("#timeSaveBtn").addEventListener("click",function(){
+    var base = this.href;
+    base+="?hour="+timeNow.hour+"&minute="+timeNow.minute+"&second="+timeNow.second;
+    this.href = base;
+});
