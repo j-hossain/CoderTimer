@@ -7,7 +7,6 @@
     }
 
     function registerUser($dtbs){
-        echo "<script>alert('the passwords didn't match')</script>";
         $handle = test_input($_POST['regHandle']);
         $fullName = test_input($_POST['regName']);
         $email = test_input($_POST['regMail']) ;
@@ -20,6 +19,8 @@
             //email valid kina
         if($password!=$passwordCon){
             echo "<script>alert('the passwords didn't match')</script>";
+            sleep(3);
+            return;
         }
         $sql = "insert into coder(C_handle,C_name,C_password,C_mail) values('".$handle."', '".$fullName."', '".$password."', '".$email."')";
         // echo $sql;
